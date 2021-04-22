@@ -1,6 +1,7 @@
-import styles from '../styles/404.module.css';
-import Layout from '../components/Layout';
 import Link from 'next/link';
+
+import styles from '@/styles/404.module.css';
+import Layout from '@/components/Layout';
 
 const NotFoundPage = () => {
   return (
