@@ -8,15 +8,12 @@ const HomePage = ({ events }) => {
     <Layout>
       <h1>Upcoming Events</h1>
       {events.length === 0 && <h3>No events to show</h3>}
-      {events.length > 0 &&
-        events.map((event) => (
-          <>
-            <EventItem key={event.id} event={event} />
-            <Link href="/events">
-              <a className="btn-secondary">View all Events</a>
-            </Link>
-          </>
-        ))}
+      {events.map((event) => (
+        <EventItem key={event.id} event={event} />
+      ))}
+      <Link href="/events">
+        <a className="btn-secondary">View all Events</a>
+      </Link>
     </Layout>
   );
 };
