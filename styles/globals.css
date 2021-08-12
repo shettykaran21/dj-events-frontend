@@ -33,7 +33,8 @@ h1 {
 
 .btn {
   display: inline-block;
-  background: red;
+  background: #222;
+  font-family: inherit;
   color: #fff;
   padding: 1rem 2rem;
   cursor: pointer;
